@@ -1,0 +1,12 @@
+footer{
+    display:flex;
+    justify-content: center;
+
+}
+footer p{
+    padding-top:23px;
+    padding-bottom:23px;
+    color:#999;
+    size: 14px;
+    font-family: "Roboto", sans-serif;
+}

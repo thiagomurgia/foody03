@@ -1,0 +1,43 @@
+{% include "layout/layout.njk" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/recipes.css">
+    <title>recipes.njk</title>
+</head>
+<body>
+    {% block menu%}
+    {% endblock %}
+
+
+    <div class="container">
+    <div class="content">
+            <div class="wrapper">
+        {% for item in tem %}
+        <a href="/recipe/{{item.index}}">
+                <div class="card" author="{{item.author}}">
+                    <div class="top"><img src="{{item.image}}" alt=""></div>
+                    <div class="bottom">
+                        <strong>{{item.title}}</strong><br>
+                        <small>por {{item.author}}</small>
+                    </div>     
+                </div>
+        {%endfor%}
+        </a>
+    </div>
+</div>
+<div class="btn">
+    <a href="/">
+    <div class="btn-btn">
+        <h4>Página principal</h4>
+    </div></a>
+</div>
+</div>
+{% include "layout/footer.njk" %}
+        {%block footer%}
+    {%endblock%}
+</body>
+</html>

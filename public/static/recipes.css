@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: rgb(243, 243, 243);
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding-bottom: 30px;
+
+}
+.logo{
+    padding-left:173px;
+    padding-top: 36.1px;
+}
+
+.links{
+    margin-left: 122.4px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+.links a{
+    align-content:flex-end;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight:400 ;
+}
+.links a+a{
+    margin-left:30px;
+}
+main{
+    height:40px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+main .title{
+    width:940px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.content{
+    max-width: 940px;
+
+}
+
+.content{
+    margin-top: 20px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    position:relative;
+}
+.wrapper a{
+    text-decoration: none;
+    color: #555;
+}
+
+
+
+.card{ 
+    border-radius: 15px 15px 5px 5px;
+    cursor:pointer;
+}
+.card:hover{ 
+    transition:.3s;
+    background: rgb(218, 218, 218);
+}
+.card:hover img{ 
+    transition:.3s;
+    filter: grayscale(20%);
+}
+
+
+
+.card .top img{
+    width:300px;
+    height:140px;
+    border-radius: 15px;
+}
+
+.btn{
+    margin-top: 15px;
+    padding:10px;
+    position: relative;
+    height: 50px;
+    text-align: center;
+}
+.btn a{
+    text-decoration: none;
+}
+
+.btn a h4{
+     padding:10px;
+     text-decoration: none;
+}
+
+.btn-btn{
+    width:200px;
+    border-radius: 20px;
+    background:rgb(100, 243, 100);
+    cursor: pointer;
+}
+.btn-btn a{
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(16, 90, 16);
+    text-align: center;
+    text-decoration: none;
+    
+    
+}
+
+.btn-btn:hover{
+    transition:.3s;
+    background:rgb(4, 255, 4);
+}
+
+
+

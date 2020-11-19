@@ -1,0 +1,19 @@
+{
+  "name": "foody03",
+  "version": "1.0.0",
+  "description": "��#\u0000f\u0000o\u0000o\u0000d\u0000y\u00000\u00002\u0000\r\u0000 \u0000",
+  "main": "data.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  }
+}

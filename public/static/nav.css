@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: rgb(243, 243, 243);
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding-bottom: 30px;
+
+}
+.logo{
+    padding-left:173px;
+    padding-top: 36.1px;
+}
+
+.links{
+    margin-left: 122.4px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+.links a{
+    align-content:flex-end;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight:400 ;
+}
+.links a+a{
+    margin-left:30px;
+}

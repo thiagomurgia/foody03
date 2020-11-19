@@ -1,0 +1,63 @@
+{% include "layout/layout.njk" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/recipe.css">
+ {%block header%}
+ {%endblock%}
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="{{tim.image}}" alt="">
+            <div class="title">
+                <h1>{{tim.title}}</h1>
+                <h3>por {{tim.author}}</h3>
+            </div>
+        <div class="ingredients">
+            <div class="title">
+            <h1>Ingredientes</h1>
+            <small onclick="hide();change()" id="hiden">Mostrar</small>
+            </div>
+            <div class="list" id="list">
+            {%for items in tim.ingredients%}
+            <li>{{items}}</li>
+            {%endfor%}
+            </div>
+        </div>
+        <div class="prepar">
+            <div class="title" >
+            <h1>Modo de preparo</h1>
+            <small onclick="hide1();change2()" id="hiden2">Mostrar</small>
+            </div>
+            <div class="list" id="prepar">
+            {{tim.preparation}}
+        </div>
+    </div>
+        <div class="information">
+            <div class="title">
+            <h1>Informações adicionais</h1>
+            <small onclick="hide2();change3()" id="hiden3">Mostrar</small>
+            </div>
+            <div class="list" id="information">
+
+                {{tim.information}}
+            </div>
+        </div>
+        <div class="btn">
+            <a href="/recipes">
+            <div class="btn-btn">
+                <h4>Página de receitas</h4>
+            </div></a>
+        </div>
+    </div>
+        </div>
+{% include "layout/footer.njk" %}
+        {%block footer%}
+    {%endblock%}
+ <script src="/script.js"></script>
+</body>
+</html>

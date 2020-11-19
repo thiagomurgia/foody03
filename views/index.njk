@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Foodyfy</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="links">
+            <a href="">Sobre</a>
+            <a href="/recipes">Receitas</a>
+        </div>
+    </nav>
+    <header>
+        <div class="description">
+            <div class="about">
+                <h1>As melhores receitas</h1>
+                <p>Aprenda a construir os melhores pratos
+                    com receitas criadas por profissionais
+                    do mundo inteiro.</p>
+            </div>
+            <div class="chef-img">
+                <div class="image">
+                    <img src="/images/chef.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Mais acessadas</h2>
+        </div>
+        <div class="content">
+            <div class="wrapper">
+        {% for item in tam %}<!-- 'tam' variável vinda do backend -->
+        <a href="/recipe/{{item.index}}">
+                <div class="card" author="{{item.author}}">
+                    <div class="top"><img src="{{item.image}}" alt=""></div>
+                    <div class="bottom">
+                        <strong>{{item.title}}</strong><br>
+                        <small>por {{item.author}}</small>
+                    </div>     
+                </div>
+        </a>
+        {%endfor%}
+            </div>
+        </div>
+    </main>
+
+        {% include "layout/footer.njk" %}
+        {%block footer%}
+        {%endblock%}
+
+<script src="./scripts/scripts.js"></script>    
+</body>
+</html>

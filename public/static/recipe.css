@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: rgb(243, 243, 243);
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding-bottom: 30px;
+
+}
+.logo{
+    padding-left:173px;
+    padding-top: 36.1px;
+}
+
+.links{
+    margin-left: 122.4px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+.links a{
+    align-content:flex-end;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight:400 ;
+}
+.links a+a{
+    margin-left:30px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 940px;
+}
+.header{
+    width:940px;
+    margin-left: 165px;
+    text-align: center;
+}
+.header img{
+    width:940px;
+    height:280px;
+    border-radius: 15px;
+    opacity:0.9;
+    filter: blur(0.5px);
+}
+
+.header h1{
+    margin-top:50px;
+    font-size:42px;
+    
+}
+.header h3{
+    opacity: 0.5;
+    font-size: 24px;
+}
+.header .ingredients{
+    text-align: initial;
+}
+
+.header .ingredients h1{
+    display:flex;
+}
+.header .ingredients .title{
+
+    display: flex;
+    
+}
+
+.header .ingredients .title small{
+    height:0.5px;
+    flex-direction: column-reverse;
+    padding-left:10px;
+    margin-top: 78px;
+    font-weight: bold;
+    opacity:0.5;
+    cursor:pointer;
+}
+
+.header .ingredients .list{
+    margin-top:20px;
+}
+
+.header .prepar{
+    text-align: initial;
+}
+.header .prepar h1{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.header .prepar .title{
+    display: flex;
+}
+
+.header .prepar .title small{
+    height:0.5px;
+    flex-direction: column-reverse;
+    padding-left:10px;
+    margin-top: 45px;
+    font-weight: bold;
+    opacity:0.5;
+    cursor:pointer;
+}
+
+.header .information{
+    text-align: initial;
+    margin-bottom:20px;
+}
+
+.header .information h1{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.header .information .title{
+    display: flex;
+}
+
+.header .information .title small{
+    height:0.5px;
+    flex-direction: column-reverse;
+    padding-left:10px;
+    margin-top: 45px;
+    font-weight: bold;
+    opacity:0.5;
+    cursor:pointer;
+}
+
+.btn a{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    text-decoration: none;
+}
+.btn-btn a{
+    
+    color: rgb(16, 90, 16);
+}
+
+.btn-btn{
+    width:200px;
+    padding:10px;
+    border-radius: 20px;
+    background:rgb(100, 243, 100);
+    cursor: pointer;
+    
+
+}
+.btn-btn:hover{
+    transition:.3s;
+    background:rgb(4, 255, 4);
+}
